@@ -6,7 +6,7 @@ import logo from "./logo.svg";
 function App() {
   const { data, error, loading } = useFindAllUsersQuery();
   return (
-    <div className="App">
+    <div className="App" style={{ cursor: loading ? "wait" : "default" }}>
       {error ? (
         error.message
       ) : (
