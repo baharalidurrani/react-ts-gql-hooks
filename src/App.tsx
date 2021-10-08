@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { useFindAllUsersQuery } from "./generated/graphql";
+import { useFindAllUsersQuery } from "./generated/graph-hooks";
+import logo from "./logo.svg";
 
 function App() {
   const { data, error, loading } = useFindAllUsersQuery();
